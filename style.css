@@ -1,0 +1,28 @@
+body {
+	font-family: Arial;
+}
+
+.centered {
+	text-align: center;
+}
+
+.row {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.row:after {
+    content: "";
+    border: 1px solid #d3d3d3;
+    align-self: stretch;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: 5px;
+}

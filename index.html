@@ -3,10 +3,94 @@
 
 <head>
     <meta charset=utf-8/>
+    <link rel="stylesheet" href="style.css">
+    <title>hw-03</title>
+
 </head>
 
 
 <body>
+    <!-- create centered header -->
+    <div class="centered">
+        <h1>hw-03: Interactive Webpage, and Marks & Channels</h1>
+    </div>
+
+    <div class="columns">
+    <!-- put two columns in a single row -->
+    <div class='row'>
+        <!-- insert images into left column -->
+        <div class='column left-column'>
+            <img src="file:///C:/Users/angel/DS4200/hw-03-ritu-and-angeline/img/vis1.png" style="width:90%" class='vis1'>
+
+            <br>
+            <br>
+
+            <img src="file:///C:/Users/angel/DS4200/hw-03-ritu-and-angeline/img/vis2.png" style="width:90%" class='vis1'>
+        </div>
+
+        <div class='column right-column'>
+            <!-- insert text about marks and channels on the right column -->
+            <p id="p1">
+                <b><h3> Marks: </h3></b>
+                <ul>
+                  <li>Areas (states, 'electoral votes needed to win' bar)</li>
+                </ul>
+
+                <b><h3> Channels: </h3></b>
+                <ul>
+                    <li>Color</li>
+                    <ul>
+                        <li>Represents whether a state voted for Clinton (Democrat) or Trump (Republican)</li>
+                        <li>This is good mapping because the color blue is associated with the Democratic party, while red is associated with the Republican party, so the colors make logical sense. Moreover, the red and blue have similar saturation and luminence, but are very different hues, indicating difference but not order. </li>
+                    </ul>
+
+                </ul>
+
+                <b><h3> Colormap(s): </h3></b>
+                <ul>
+                    <li>Categorical</li>
+                    <ul>
+                        <li>Represents two different categories with no order: Democrat and Republican.</li>
+                        <li>This is good mapping because the colors are perceptually different with similar saturation and value.</li>
+                    </ul>
+                </ul>
+
+            </p>
+
+            <br>
+
+            <p id="p2">
+                <b><h3> Marks: </h3></b>
+                <ul>
+                  <li>Points (each point represents a batted ball)</li>
+                </ul>
+
+                <b><h3> Channels: </h3></b>
+                <ul>
+                    <li>Color</li>
+                    <ul>
+                        <li>Represents the scoring value of the batted ball (ranging from below to above average).</li>
+                        <li>This is good mapping because the colors clearly differ from each other, while still having similar luminance. Furthermore, the colors differ in saturation depending on how far from the average it is, which is effective as we perceive increased saturation as "more".
+                        </li>
+                    </ul>
+                    <li>Position</li>
+                    <ul>
+                        <li>Represents the launch angle and exit velocity of the batted ball.</li>
+                        <li>This is good mapping because it is easy to see at what velocities and angles a ball has a higher/lower scoring value. It is clear that balls batted at an angle between 20 and 40 degrees and an exit velocity of over 90mph are likely to be homeruns.</li>
+                    </ul>
+
+                </ul>
+
+                <b><h3> Colormap(s): </h3></b>
+                <ul>
+                    <li>Divergent</li>
+                    <ul>
+                        <li>Represents two extremes of the scoring value range. </li>
+                        <li>This is good mapping because the neutral color (white) indicates "average" aka the midpoint of the range, with contrasting hues for below and above average. The saturation for the above average scoring values is higher than that of the below average scoring values - this is effective since it draws the viewer's attention to concentrations of balls with an above average scoring value which is likely more of interest.</li>
+            </p>
+
+        </div>
+
 
 
 </body>
